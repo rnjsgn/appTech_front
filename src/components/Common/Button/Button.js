@@ -11,6 +11,9 @@ export const Button = ({
     backgroundColor,
     color,
 
+    borderColor,
+    borderWidth,
+
     fontSize,
 
     marginTop,
@@ -24,6 +27,9 @@ export const Button = ({
             height: height,
 
             backgroundColor: backgroundColor,
+
+            borderColor: borderColor,
+            borderWidth: borderWidth,
 
             alignItems : 'center',
             justifyContent : 'center',

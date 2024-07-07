@@ -8,7 +8,9 @@ import ButtonListStyle from "./ButtonListStyle";
 import Ad from "../../../assets/images/Ad.png";
 import Game from "../../../assets/images/Game.png";
 
-export const ButtonList = () => {
+export const ButtonList = ({
+    navigation,
+}) => {
     return(
         <View
             style = {ButtonListStyle.buttonlist_container}
@@ -40,6 +42,8 @@ export const ButtonList = () => {
                 fontSize={30}
 
                 marginTop={20}
+
+                onPress={() => navigation.navigate('게임 참가')}
             />
         </View>
     )

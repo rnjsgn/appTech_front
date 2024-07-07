@@ -7,13 +7,17 @@ import MainStyle from "./MainStyle";
 
 import { UserProvider } from "../../context/UserContext";
 
-export const MainPresenter = () => {
+export const MainPresenter = ({
+    navigation
+}) => {
     return(
         <ScrollView
             style = {MainStyle.container}
         >
             <UserProvider>
-                <MainList/>
+                <MainList
+                    navigation = {navigation}
+                />
             </UserProvider>
         </ScrollView>
     )

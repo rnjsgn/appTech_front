@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { MainPresenter } from "./MainPresenter";
 
-const MainContainer = () => {
+const MainContainer = ({
+    navigation
+}) => {
     return(
-        <MainPresenter/>
+        <MainPresenter
+            navigation = {navigation}
+        />
     )
 }
 

@@ -8,7 +8,9 @@ import { ButtonList } from "../ButtonList/ButtonList";
 import { RecentGameList } from "../RecentGameList/RecentGameList";
 import { WinList } from "../WinList/WinList";
 
-export const MainList = () => {
+export const MainList = ({
+    navigation
+}) => {
     return(
         <View
             style = {MainListStyle.mainList_container}
@@ -19,7 +21,9 @@ export const MainList = () => {
                 resizeMode="contain"
             />
             <Profile />
-            <ButtonList/>
+            <ButtonList
+                navigation = {navigation}
+            />
             <RecentGameList />
             <WinList />
         </View>
