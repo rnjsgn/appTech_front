@@ -15,13 +15,10 @@ const AppNavigator = () => {
             headerShown: false,
           }}
         />
-        {/* <Stack.Screen
+        <Stack.Screen
           name="게임 참가" 
           component={GameList}
-          options={{
-            headerShown: false,
-          }}
-        /> */}
+        />
       </Stack.Navigator>
     );
   };

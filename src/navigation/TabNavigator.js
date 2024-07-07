@@ -1,6 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { GameList, Main, MyPage } from '../Pages/index'
+import { GameList, Main, MyPage, Shop } from '../Pages/index'
 import { Image } from 'react-native';
 
 const Tab = createBottomTabNavigator();
@@ -22,7 +22,11 @@ const MainTabNavigator = () => {
       />
       <Tab.Screen 
         name="마이" 
-        component={GameList}
+        component={MyPage}
+      />
+      <Tab.Screen 
+        name="상점" 
+        component={Shop}
       />
     </Tab.Navigator>
   );
