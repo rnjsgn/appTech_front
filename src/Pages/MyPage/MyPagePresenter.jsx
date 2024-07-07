@@ -1,10 +1,15 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { ScrollView } from "react-native";
+
+import { UserProvider } from "../../context/UserContext";
+import { MyPageList } from "../../components/MyPage/MyPageList/MyPageList";
 
 export const MyPagePresenter = () => {
     return(
-        <View>
-            <Text>마이페이지</Text>
-        </View>
+        <ScrollView>
+            <UserProvider>
+                <MyPageList />
+            </UserProvider>
+        </ScrollView>
     )
 }
