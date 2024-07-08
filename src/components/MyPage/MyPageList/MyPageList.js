@@ -7,7 +7,9 @@ import { Profile } from "../../Common/Profile/Profile";
 import { MyActivity } from "../MyActivity/MyActivity";
 import { MyPageButtonList } from "../MyPageButtonList/MyPageButtonList";
 
-export const MyPageList = () => {
+export const MyPageList = ({
+    navigation
+}) => {
     return(
         <View
             style = {MyPageListStyle.mypagelist_container}
@@ -20,7 +22,9 @@ export const MyPageList = () => {
                 style = {MyPageListStyle.mypagelist_title}
             >나의 활동</Text>
             <MyActivity />
-            <MyPageButtonList />
+            <MyPageButtonList 
+                navigation = {navigation}
+            />
         </View>
     )
 }

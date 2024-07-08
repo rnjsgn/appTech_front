@@ -2,14 +2,15 @@ import React from "react";
 import { MyPageButton } from "../MyPageButton/MyPageButton";
 import { View } from "react-native";
 
-export const MyPageButtonList = () => {
+export const MyPageButtonList = ({
+    navigation
+}) => {
     return(
         <View>
-            <MyPageButton 
+            <MyPageButton
                 title = {'포인트 내역'}
-            />
-            <MyPageButton 
-                title = {'게임 내역'}
+
+                onPress={() => navigation.navigate('포인트 내역')}
             />
             <MyPageButton 
                 title = {'프로필 수정'}

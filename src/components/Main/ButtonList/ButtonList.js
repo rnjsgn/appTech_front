@@ -43,7 +43,7 @@ export const ButtonList = ({
 
                 marginTop={20}
 
-                onPress={() => navigation.navigate('게임 참가')}
+                onPress={() => navigation.navigate('게임 리스트')}
             />
         </View>
     )
